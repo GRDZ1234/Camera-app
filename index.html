@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take a Photo</title>
+</head>
+<body>
+    <h2>Take a Photo</h2>
+    <input type="file" accept="image/*" capture="camera" id="cameraInput">
+    <script>
+        document.getElementById('cameraInput').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                // Handle the file upload logic here
+                alert("Photo taken successfully! Please upload it to the form.");
+            }
+        });
+    </script>
+</body>
+</html>
